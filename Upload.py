@@ -16,7 +16,10 @@ encrypted_lines = []
 for line in range(len(lines)):
     encrypted_lines.append(encrypt(lines[line].strip(), "Ljezzy00Ljezzy00"))
 
-browser = webdriver.Firefox()
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--disable-infobar")
+chrome_options.add_argument("--headless")
+browser = webdriver.Chrome(chrome_options=chrome_options)
 browser.get("https://github.com/login")
 browser.find_element_by_id("login_field").send_keys("rocket-league-bot")
 browser.find_element_by_id("password").send_keys("Ljezzy00")

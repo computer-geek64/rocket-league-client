@@ -8,7 +8,7 @@ from Encryption import *
 import os
 
 
-with open(os.environ["USERPROFILE"] + "/Documents/rocket-league-client/settings.txt", "r") as file:
+with open(os.getcwd() + "/settings.txt", "r") as file:
     lines = file.readlines()
     file.close()
 

@@ -13,8 +13,9 @@ with open(os.getcwd() + "/settings.txt", "r") as file:
     file.close()
 
 encrypted_lines = []
+password = (input("Enter the pre-defined password:\n") * 16)[:16]
 for line in range(len(lines)):
-    encrypted_lines.append(encrypt(lines[line].strip(), "Ljezzy00Ljezzy00"))
+    encrypted_lines.append(encrypt(lines[line].strip(), password))
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--disable-infobar")

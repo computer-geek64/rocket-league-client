@@ -2,10 +2,10 @@
 A client repository for a Rocket League trading website posting bot.
 
 After cloning and unzipping the repository, create a new file called
-**settings.txt** in the rocket-league-client directory. This file contains
+*settings.txt* in the rocket-league-client directory. This file contains
 the settings for the Rocket League bot.
 
-The first line of the **settings.txt** file is an integer representing the
+The first line of the *settings.txt* file is an integer representing the
 delay in minutes between posting accounts. Every line after the first line
 is an account in the form of `username:password`. An exclamation point at
 the start of the line will temporarily remove the account from the Rocket
@@ -26,3 +26,7 @@ Accounts: 2
 Usernames: username, another_username
 Passwords: password, another_password
 ```
+
+After modifying *settings.txt*, execute *Upload.py* to upload the data to
+the bot. *Upload.py* will prompt the user for a pre-defined password, so
+that the data is encrypted during transfer.

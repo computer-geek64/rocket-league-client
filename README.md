@@ -29,4 +29,9 @@ Passwords: password, another_password
 
 After modifying *settings.txt*, execute *Upload.py* to upload the data to
 the bot. *Upload.py* will prompt the user for a pre-defined password, so
-that the data is encrypted during transfer.
+that the data is encrypted during transfer. It is critical that the
+password is entered correctly, otherwise it will encrypt the data with
+a different password, rendering the data unreadable.
+
+When an update is released for the repository, the update can be easily
+downloaded by executing *Update.py*.

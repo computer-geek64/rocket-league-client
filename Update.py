@@ -10,3 +10,4 @@ repository_name = os.getcwd()
 Git.fetch(repository_name)
 if not Git.is_up_to_date(repository_name):
     Git.pull(repository_name)
+exit(0)

@@ -36,3 +36,4 @@ browser.find_element_by_class_name("CodeMirror-code").send_keys("\n".join(encryp
 browser.find_element_by_id("submit-file").click()
 sleep(3)
 browser.close()
+exit(0)
